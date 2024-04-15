@@ -14,8 +14,8 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  const { inputs } = req.body;
-  const todo = await Todo.create({ title: inputs, status: false });
+  const { title } = req.body;
+  const todo = await Todo.create({ title, status: false });
   res.json(todo);
 });
 

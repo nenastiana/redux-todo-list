@@ -1,0 +1,68 @@
+:root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 221, 249);
+}
+
+h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 64px;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+}
+
+.todos-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 300px;
+}
+
+#todoInput {
+  margin-bottom: 50px;
+}
+
+.addButton,
+.button-primary,
+.button-secondary {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ff69b4;
+  margin-left: 5px;
+}
+
+.button-secondary {
+  background-color: #6495ed;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  background-color: #ff4d88;
+}
+
+input {
+  padding: 7px;
+  border: 1px solid #ff4d88;
+  border-radius: 5px;
+  outline: none;
+}
+
+#todoEditInput {
+  width: 220px;
+}
